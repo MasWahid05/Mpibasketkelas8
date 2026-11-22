@@ -349,7 +349,7 @@ window.DATA = {
   ringkas: "Variasi operan dan menggiring, lay up kanan dan kiri, lalu merancang aturan yang adil supaya semua teman ikut bermain.",
   guru: "Syaifudin Wahid, M.Pd",
   kepala: "bola",
-  tema: { utama: "#FF7A1F", kedua: "#1E9B4C" },
+  tema: { utama: "#1E9B4C", kedua: "#FF7A1F", aksen: "#19B894", sorot: "#C6F36B", latar: "#E8F7EC", lembut: "#F0FAF2" },
 
   tujuan: [
     "Mempraktikkan <b>variasi operan</b> (dada, pantul, dan <b>atas kepala</b>) serta menangkap sambil bergerak dengan teknik yang benar.",
@@ -374,14 +374,15 @@ window.DATA = {
     { judul: "Pelanggaran dasar", pita: "Aturan",
       rantai: [["Travelling", "berjalan membawa bola tanpa menggiring"], ["Double dribble", "menggiring lagi setelah berhenti, atau dua tangan bersamaan"], ["Foul", "kontak berlebihan: mendorong, memukul tangan, menarik"]],
       setelah: "<p>Di kelas kita juga ada aturan keselamatan: <b>dilarang merebut bola dari tangan lawan</b>; penjaga hanya boleh memotong operan atau pantulan.</p>" },
-    { judul: "Modifikasi: semua ikut bermain", pita: "Fair Play",
-      isi: "<p>Alat, aturan, dan skor boleh diubah supaya permainan <b>adil</b>, <b>aman</b>, dan <b>semua teman ikut bermain</b>. Aturan yang baik diuji dulu, lalu dinilai bersama.</p>",
-      rantai: [["Alat", "bola lebih ringan, target dinding lebih rendah"], ["Aturan", "giring maks 3 pantulan, wajib 3 operan sebelum menembak"], ["Skor", "+1 bonus bila semua anggota menyentuh bola"], ["Uji", "adil? aman? semua ikut?"]],
+    { judul: "Merancang aturan sendiri", pita: "Fair Play",
+      isi: "<p>Di kelas 7 kamu sudah mencoba aturan dari guru. Sekarang <b>kelompokmu merancang aturan sendiri</b> di Kartu Aturan, mengujinya di Festival Aturan, lalu menilainya: <b>adil? aman? semua ikut bermain?</b></p>",
+      rantai: [["Masalah", "temukan masalah, mis. bola dikuasai satu orang"], ["Rancang", "pilih ubahan alat, aturan, atau skor"], ["Uji", "mainkan 3 menit di Festival Aturan"], ["Nilai", "adil? aman? semua ikut? perbaiki bila perlu"]],
       setelah: "<p><b>Kartu hijau</b> diberikan wasit untuk tindakan sportif: mengakui pelanggaran sendiri, membantu teman yang jatuh, mengoper ke teman yang belum menyentuh bola.</p>" },
-    { judul: "Pertolongan pertama: RICE", pita: "P3K",
-      isi: "<p>Jari tersodok atau pergelangan terkilir? Berhenti dan lapor guru, lalu ingat RICE. Jangan dipijat atau diberi balsem panas pada 48 jam pertama.</p>",
-      rantai: [["Rest", "berhenti, istirahatkan"], ["Ice", "kompres es dibungkus kain 15–20 menit"], ["Compression", "balut tidak terlalu ketat"], ["Elevation", "angkat lebih tinggi dari jantung"]],
-      sumber: "Sumber: RS Ortopedi Prof. Dr. R. Soeharso Surakarta, artikel tentang metode RICE di keslan.kemkes.go.id (2023)." }
+    { judul: "Praktik RICE: membalut dan mengangkat", pita: "P3K",
+      isi: "<p>Di kelas 7 kamu sudah mengenal langkah awal saat jari tersodok. Sekarang praktikkan <b>RICE lengkap</b> berpasangan, termasuk membalut jari dan pergelangan. Jangan dipijat atau diberi balsem panas pada 48 jam pertama.</p>",
+      rantai: [["Rest", "berhenti, jangan gerakkan bagian yang cedera"], ["Ice", "kompres es dibungkus kain 15–20 menit"], ["Compression", "jari: balut bersama jari di sebelahnya (buddy taping); pergelangan: perban elastis, tidak terlalu ketat"], ["Elevation", "angkat lebih tinggi dari jantung"]],
+      setelah: "<p>Cek balutan: bila ujung jari <b>pucat, dingin, kebas, atau kebiruan</b>, longgarkan. Ke dokter atau puskesmas bila bentuk berubah, sangat nyeri, atau tidak membaik.</p>",
+      sumber: "Sumber: RS Ortopedi Prof. Dr. R. Soeharso Surakarta, artikel tentang metode RICE di keslan.kemkes.go.id (2023); American Academy of Pediatrics, HealthyChildren.org (Common Finger Injuries in Athletes)." }
   ],
 
   judulGerak: "Variasi Teknik Bola Basket",
@@ -447,7 +448,7 @@ window.DATA = {
   ],
 
   lacak: {
-    tab: "Cari Kesalahan", judul: "Cari Kesalahan Teknik", istilah: "kesalahan", wadah: "Kotak Peluit", ikon: "peluit",
+    tab: "Cari Kesalahan", judul: "Cari Kesalahan Variasi & Lay Up", istilah: "kesalahan", wadah: "Kotak Peluit", ikon: "peluit",
     kepala: "LANGKAH GERAK", ekor: null,
     petunjuk: "Setiap kartu berisi urutan gerak atau aturan. Ada yang salah. <b>Seret yang salah ke Kotak Peluit</b>, lalu tekan Periksa.",
     acak: { kecuali: "^$" },
@@ -479,9 +480,9 @@ window.DATA = {
         { n: "Operan atas kepala", A: [[62, 30], [62, 70], [80, 50]], B: [[66, 38], [70, 60]], bola: [59, 30], panah: [[[62, 30], [72, 18], [80, 46]]], ket: "Penjaga berdiri dekat A1. A1 memakai operan atas kepala melewati lengan penjaga ke A3." },
         { n: "Operan pantul", A: [[62, 30], [62, 70], [80, 50]], B: [[66, 50], [74, 62]], bola: [59, 30], panah: [[[62, 30], [62, 52], [62, 68]]], ket: "Penjaga berdiri tinggi di tengah. A1 memakai operan pantul di bawah lengan penjaga ke A2." }] },
     { jenis: "rebutan", n: "Kuis Rebutan Tim", k: "Dua tim di depan PID", tim: [["Tim Oranye", "#FF7A1F"], ["Tim Hijau", "#1E9B4C"]], jumlah: 10, detik: 20 },
-    { jenis: "roda", n: "Roda Modifikasi Aturan", k: "Inspirasi Kartu Aturan", atas: "Aturan untuk dicoba",
+    { jenis: "roda", n: "Roda Inspirasi Aturan", k: "Bahan merancang Kartu Aturan", atas: "Ide untuk kelompokmu",
       isi: ["Giring maksimal 3 pantulan", "Bonus +1 bila semua menyentuh bola", "Tembakan ke target dinding", "Bola karet lebih ringan", "Wajib 3 operan sebelum menembak", "Pemain berganti tiap 2 menit", "Crossover sebelum menembak +1", "Operan atas kepala +1"],
-      catatan: "Putar, coba aturannya 3 menit, lalu nilai: adil? aman? semua ikut bermain?" },
+      catatan: "Putar untuk mendapat ide, lalu kelompok menggabungkan atau mengubahnya menjadi aturan sendiri di Kartu Aturan. Uji 3 menit, lalu nilai: adil? aman? semua ikut bermain?" },
     { jenis: "roda", n: "Roda Tantangan Teknik", k: "Pemanasan & selingan", atas: "Tantangan untukmu",
       isi: ["Crossover 10 kali", "Operan atas kepala 5 kali tanpa jatuh", "Lay up kanan 3 kali", "Lay up kiri 2 kali", "Giring tangan lemah 20 detik", "Tembakan BEEF dari 2 meter", "Jump stop 5 kali", "Jelaskan travelling ke temanmu"] }
   ],
@@ -515,7 +516,7 @@ const NAMA_WARNA={koral:'#FF4F64',merah:'#E8323F',tosca:'#19B894',hijau:'#1E9B4C
 const warna=w=>w?(NAMA_WARNA[w]||w):'';
 const terang=w=>{const m=/^#?([0-9a-f]{6})$/i.exec(warna(w)||'');if(!m)return /kuning/.test(w||'');const n=parseInt(m[1],16),r=n>>16,g=n>>8&255,b=n&255;return (r*299+g*587+b*114)/1000>170;};
 const teksDi=w=>terang(w)?'#2B1A3F':'#fff';
-if(D.tema){const r=document.documentElement.style;if(D.tema.utama)r.setProperty('--koral',warna(D.tema.utama));if(D.tema.kedua)r.setProperty('--tosca',warna(D.tema.kedua));if(D.tema.aksen)r.setProperty('--biru',warna(D.tema.aksen));}
+if(D.tema){const r=document.documentElement.style;if(D.tema.utama)r.setProperty('--koral',warna(D.tema.utama));if(D.tema.kedua)r.setProperty('--tosca',warna(D.tema.kedua));if(D.tema.aksen)r.setProperty('--biru',warna(D.tema.aksen));if(D.tema.sorot)r.setProperty('--kuning',warna(D.tema.sorot));if(D.tema.latar||D.tema.lembut){const st=document.createElement('style');st.textContent=':root{'+(D.tema.latar?'--langit:'+warna(D.tema.latar)+';':'')+(D.tema.lembut?'--lembut:'+warna(D.tema.lembut)+';':'')+'}';document.head.append(st);}}
 
 
 /* ---------- LENCANA: prestasi murid, tersimpan di perangkat ini ---------- */
